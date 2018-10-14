@@ -1,5 +1,6 @@
 const express = require('express');
 const proxy = require('express-http-proxy');
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -24,6 +25,6 @@ app.get('*', (req, res, next) => {
   res.sendFile(__dirname + '/client/public/index.html');
 });
 
-app.listen(3001, () => {
-  console.log('Server listening on 3001');
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
 });
