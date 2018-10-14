@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/cyrstron/testify/issues"
   },
-  "homepage": "https://github.com/cyrstron/testify#readme"
+  "homepage": "https://github.com/cyrstron/testify#readme",
+  "proxy": "http://localhost:3001"
 }
